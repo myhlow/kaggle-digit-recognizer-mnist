@@ -65,8 +65,8 @@ Projecting 784-pixel images onto an orthogonal 55-dimensional PCA subspace (pres
 Radial Basis Function (RBF) kernels compute Euclidean distances:
 $$K(x, z) = \exp\left(-\gamma \|x - z\|^2\right)$$
 Shifting a digit by just 1 pixel drastically alters $\|x - z\|^2$ in pixel space. By systematically tripling the training set to **126,000 samples** via dual-axis translational shifts:
-* Horizontal jitter: $\Delta x \in \{+1, -1\}$ (42,000 samples)
-* Vertical jitter: $\Delta y \in \{+1, -1\}$ (42,000 samples)
+* Horizontal jitter: $\Delta x \in \{+1, -1\}$ (&plusmn;1px on X-axis, 42,000 samples)
+* Vertical jitter: $\Delta y \in \{+1, -1\}$ (&plusmn;1px on Y-axis, 42,000 samples)
 * Base raw images (42,000 samples)
 
 The learned support vectors internalize 2D positional invariance, driving our Kaggle test score to **`0.98792` (Rank #406, Top 47.05%)** in just 3.4 minutes of training time on mobile CPU!
