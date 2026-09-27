@@ -1,0 +1,23 @@
+# Large Datasets
+train.csv
+test.csv
+sample_submission.csv
+*.zip
+digit-recognizer.zip
+
+# Kaggle Submissions
+submission_*.csv
+
+# Temporary files and leaderboard cache
+lb/
+*.log
+*.tmp
+draft_post_content.html
+
+# Python runtime artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.env
+.DS_Store
